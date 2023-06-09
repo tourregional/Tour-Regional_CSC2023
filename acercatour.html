@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Regional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            background-color: burlywood;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .tour-image {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            height: 720px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .carousel-item img{
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-20px);
+            }
+            100% {
+                transform: translateX(20px);
+            }
+        }
+
+        nav {
+    background-color: gray;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width:600px) {
+    main {
+        padding: 10px;
+        flex-direction: column;
+    }
+}
+
+.feature-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature{
+    text-align: center;
+}
+
+.feature-image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4{
+   color: darkblue;
+   font-size: 30px;
+}
+
+.museo{
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+.img {
+    max-width: 99%;
+    max-height: 99%;
+  }
+  
+  .image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    height: 600px;
+    position: relative;
+  }
+  
+  .button-slider {
+    border: none;
+    height: 100%;
+    width: 10%;
+    background-color: transparent;
+    font-size: 60px;
+    cursor: pointer;
+  }
+  
+  .button-slider:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .gallery-container {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #arriba {
+    margin-top: 20px;
+  }
+
+  .anterior {
+    margin-right: 10px;
+  }
+  
+  .siguiente {
+    margin-left: 10px;
+  }
+h3{
+    color: red;
+}
+    </style>
+</head>
+
+<header>
+    <h1>Tour por el Valle del Cauca</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="regional.html">Inicio</a></li>
+      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="formulario.html">Formulario</a></li>
+      <li><a href="director.html">Director Turistico</a></li>
+      <li><a href="acercatour.html">Acerca del tour</a></li>
+    </ul>
+  </nav>
+
+<body>
+    <main>
+        <img class="tour-image" src="folleto.jpeg" alt="Tour Image">
+        <center><h4>Información del Tour</h4></center>
+        <b><p>Embárcate en una aventura de 2 días y 1 noche para descubrir los encantos del departamento del Valle del Cauca en Colombia. Este tour regional, realizado por un grupo de estudiantes del grado 11 del Colegio San Cayetano, tiene como objetivo infundir conocimiento y promover la apreciación de la cultura y la naturaleza de esta fascinante región.</p></b>
+        <h4>Precio:</h4> 
+        <p> $xxxx</p>
+        <h4>Fecha:</h4> 
+        <p> xxxxxx de 2023</p>
+        <h4>Lugar:</h4> 
+        <p> La región del Valle del Cauca es una de las 32 regiones administrativas y de planificación de Colombia. Se encuentra ubicada en la zona occidental del país, en la región Andina. El Valle del Cauca limita al norte con el departamento de Chocó, al sur con los departamentos de Nariño y Cauca, al este con Tolima y al oeste con el Océano Pacífico.
+            El departamento del Valle del Cauca es conocido por ser uno de los principales centros económicos e industriales de Colombia. Su capital es la ciudad de Cali, que es la tercera ciudad más grande del país y es reconocida por su cultura, música, salsa y gastronomía.
+            La región del Valle del Cauca cuenta con una diversidad de paisajes, que van desde las cordilleras de los Andes hasta las llanuras del Pacífico. Además, posee una gran riqueza natural con numerosos ríos, bosques y reservas naturales.</p> <img src="" alt="">
+        <center><h2> INCLUYE</h2></center>
+        <h3> Alojamiento</h3>
+        <h3> Alimentación</h3>
+        <h3> Seguro de Vida Colectivo</h3>
+        <h3> Recorrido</h3>
+        <h3> Museos</h3>
+        <h4> Museo de la Caña de Azucar y Museo Rayo </h4>
+        <img class="museo" src="museocaña.jpg" alt="">
+        <p>El Museo de la Caña de Azúcar se encuentra en la hacienda Piedechinche. Aquí podrás conocer el proceso de elaboración del azúcar proveniente de la caña. Este es un espacio en el cual se puede apreciar los antiguos procesos con los cuales se ha logrado transformar estas plantas en el endulzante que todos tenemos en nuestros hogares. Si alguna vez ha escuchado el término “trapiche”, le encantará conocer este interesante molino con el cual no solo le sacará el jugo a la caña, sino que también le sacará el jugo a su visita a Santa Elena.</p>
+        <br>
+        <img class="museo" src="omarrayo.jpg" alt="omarrayo">
+        <p>En 1981 estableció el Museo Rayo de Dibujo y Grabado Latinoamericano en su natal Roldanillo. Fue diseñado por el arquitecto mexicano Leopoldo Goout. Se exponen dos mil cuadros y grabados de la producción de Rayo, además de quinientos de diferentes artistas latinoamericanos que forman parte de su colección personal. Funcionan allí diferentes módulos como el de las exposiciones permanentes, las itinerantes, una biblioteca y el taller de artes gráficas.</p>
+    <br>
+
+        <h2> Detalles del Tour</h2>
+        <div class="feature-container">
+            <div class="feature">
+                <img class="feature-image" src="hotel.jpg" alt="hotel">
+                <h3> Alojamiento </h3>
+            </div>
+                <div class="feature">
+                 <img class="feature-image" src="almuerzo.jpg" alt="almuerzo">
+                    <h3> Alimentación </h3>
+             </div>
+            </div>
+                    <div class="feature">
+                        <img class="feature-image" src="seguro.jpg" alt="seguro">
+                        <h3> Seguro de Vida Colectivo </h3>
+         </div>
+        </div>
+<br>
+<br>
+        <center><h4>GRADO 11 CSC</h4></center>
+        <div class="image-slider">
+            <button id="anterior" class="button-slider">&lt;</button>
+            <img id="cambioimagen" class="img">
+            <button id="siguiente" class="button-slider">&gt;</button>
+        </div>
+        <div class="gallery-container">
+                <img src="loguito.jpg" alt="portada" class="img">
+                <img src="benavides.JPG" alt="luis" class="img">
+                <img src="bermudez.JPG" alt="esteban" class="img">
+                <img src="cabezas.JPG" alt="isabel" class="img">
+                <img src="cano.JPG" alt="brandon" class="img">
+                <img src="castaño.JPG" alt="laura" class="img">
+                <img src="criollo.JPG" alt="jose miguel" class="img">
+                <img src="davila.JPG" alt="geraldine" class="img">
+                <img src="enriquez.JPG" alt="eileen" class="img">
+                <img src="espinosa.JPG" alt="johan" class="img">
+                <img src="florez.JPG" alt="anghie" class="img">
+                <img src="lenis.JPG" alt="yury" class="img">
+                <img src="lopez.JPG" alt="juan sebastian" class="img">
+                <img src="maturana.JPG" alt="jhor" class="img">
+                <img src="ossa.JPG" alt="bryan" class="img">
+                <img src="parra.JPG" alt="sara" class="img">
+                <img src="perez.JPG" alt="estefany" class="img">
+                <img src="placeres.JPG" alt="nicolas" class="img">
+                <img src="rodriguez.JPG" alt="nasly" class="img">
+                <img src="ruiz.JPG" alt="valeria" class="img">
+                <img src="rosso.JPG" alt="juan jose" class="img">
+                <img src="sanchez.JPG" alt="breiner" class="img">
+                <img src="urbano.JPG" alt="hillary" class="img">
+            </div>
+    </main>
+
+    <script>
+        const images = [ "loguito.jpg", "benavides.jpg", "bermudez.jpg", "cabezas.jpg", "cano.jpg", "castaño.jpg", "criollo.jpg", "davila.jpg", "enriquez.jpg", "espinosa.jpg", "florez.jpg", "lenis.jpg", "lopez.jpg", "maturana.jpg", "ossa.jpg", "parra.jpg", "perez.jpg", "placeres.jpg", "rodriguez.jpg", "ruiz.jpg", "rosso.jpg", "sanchez.jpg", "urbano.jpg"];
+let currentImageIndex= 0;
+
+const cambioimagen = document.getElementById("cambioimagen");
+const anterior = document.getElementById("anterior");
+const siguiente = document.getElementById("siguiente");
+const arriba = document.getElementById("arriba");
+const galleryContainer = document.querySelector(".gallery-container");
+const imageSlider = document.querySelector(".image-slider");
+
+anterior.addEventListener("click", anteriorImagen);
+siguiente.addEventListener("click", siguienteImagen);
+arriba.addEventListener("click", CambiarVista);
+
+function anteriorImagen () {
+  currentImageIndex = (currentImageIndex - 1 ) % images.length;
+  cambioimagen.src = images[currentImageIndex];
+}
+
+function siguienteImagen() {
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  cambioimagen.src = images[currentImageIndex];
+}
+
+function CambiarVista() {
+  if (galleryContainer.style.display === "none") {
+    galleryContainer.style.display = "flex";
+    imageSlider.style.display = "none";
+    arriba.textContent = "Ver vista galería de imágenes";
+  } else {
+    galleryContainer.style.display = "none";
+    imageSlider.style.display = "flex";
+    arriba.textContent = "Ver vista deslizador de imágenes";
+  }
+}
+    </script>
+    <br>
+
+    <footer>
+        <em>© 2023 GRADO 11 CSC | Contacto: e.perez@colegiosancayetano.com.co | Teléfono: +573145255104</em>
+        </footer>
+</body>
+</html>

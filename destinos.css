@@ -89,3 +89,10 @@ body {
   nav ul li a:hover {
     background-color: #ddd;
   }
+
+  @media (max-width:600px) {
+    main {
+        padding: 10px;
+        flex-direction: column;
+    }
+}
