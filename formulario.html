@@ -1,17 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lange="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-  <title>Tour por el Valle del Cauca</title>
-  <link rel="stylesheet" type="text/css" href="regional.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<title>Formulario CSC</title>
 </head>
-<body>
-  <header>
-    <h1>Tour por el Valle del Cauca</h1>
-  </header>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #555769;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .form-register{
+       background: linear-gradient(
+        50deg,
+        rgba(40,42,55,1) 50%
+        rgba(40,42,55,0.7)
+        url("https://drive.google.com/file/d/1LjNkWXfwX_JZE_p-hDI2t8epkdzYTTgk/view"));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px;
+        width: 3000px;
+        height: max-content;
+        border-radius: 25px;
+    }
+    
+    .form-register h2{
+         color: #f4f6f9;
+         font-size: 40px;
+         margin-bottom: 25px;
+    }
 
-  <nav>
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    label{
+        font-size: 17px;
+        color: #959AAB;
+        margin-bottom: 10px;
+    }
+
+    input , textarea{
+        padding: 17px 14px;
+        background-color: #333646;
+        border: 0;
+        font-size: 15px;
+        color: #F4F6F9;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    :focus {
+        outline: 1px solid #1E92E9;
+    }
+
+    .btn{
+        background-color: #1E92E9;
+        width: 150px;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: #2198F9;
+    }
+
+    @media(max-width:991px) {
+        body{
+            padding: 30px;
+        }
+
+        .form-content {
+            width: 100%;
+        }
+
+        form{
+            width: 100%;
+        }
+    }
+
+    nav {
+    background-color: gray;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ddd;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    justify-content: end;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+
+
+</style>
+
+<nav>
     <ul>
       <li><a href="regional.html">Inicio</a></li>
       <li><a href="destinos.html">Destinos</a></li>
@@ -21,33 +156,36 @@
     </ul>
   </nav>
 
-  <section id="formulario">
-    <h2>Formulario de Registro</h2>
-    <p>Ingresa tus datos personales para recibir más información sobre nuestro tour.</p>
-    <form action="https://formspree.io/f/moqzoyyq" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" id="nombre" required>
-      <br>
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" required>
-      <br>
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" name="telefono" id="telefono" required>
-      <br>
-      <input type="submit" value="Enviar">
+<body>
+    <form class="form-content"
+    action="https://formsubmit.co/brandonleon1208@gmail.com" method="POST"
+    >
+        <h2>Formulario de Contacto</h2>
+        <br>
+        
+        <label for="name">Nombre</label>
+        <input type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+        
+        <label for="email">Email</label>
+        <input type="text" name="Email" id="email" placeholder="Ingrese su Email">
+        
+        <label for="telefono">Telefono</label>
+        <input  type="text" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
+        
+        <label for="coments">Comentarios</label>
+        <textarea name="coments" id="coments" cols="30" rows="5" placeholder="asunto"></textarea>
+        
+        <input class="btn" type="submit" value="ENVIAR">
+
+        <input type="hidden" name="_cc" value="e.perez@colegiosancayetano.com.co">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Persona Interesada por el tour">
+        <input type="hidden" name="_template" value="table">
+
     </form>
-  </section>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <footer>
-    <p>© 2023 GRADO 11 CSC | Contacto: e.perez@colegiosancayetano.com.co | Teléfono: +573145255104</p>
-    </footer>
-  <script src="formulario.js"></script>
+
+    <footer>
+        <p>© 2023 GRADO 11 CSC | Contacto: e.perez@colegiosancayetano.com.co | Teléfono: +573145255104</p>
+        </footer>
 </body>
 </html>

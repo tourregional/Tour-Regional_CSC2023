@@ -75,9 +75,18 @@
   
   <br>
   <h2>Asistente Virtual</h2>
-  <div id="chat-container"></div>
-  <input type="text" id="user-input" placeholder="Escribe tu pregunta..." />
-  <button onclick="enviarMensaje()">Enviar</button>
+<div id="chat-container"></div>
+<select id="user-input">
+  <option value="">Selecciona una pregunta</option>
+  <option value="hola" >¿Hola, cómo estás?</option>
+  <option value="ayuda" >¿Puedes ayudarme?</option>
+  <option value="duracion">¿Cuánto dura el tour?</option>
+  <option value="costo">¿Cuánto cuesta el tour?</option>
+  <option value="incluye">¿Qué incluye el tour?</option>
+  <option value="formas">¿Como puedo pagar el tour?</option>
+  <option value="cuotas">¿Cuantas cuotas debo pagar?</option>
+</select>
+<button onclick="enviarMensaje()">Enviar</button>
   <footer>
     <p>© 2023 GRADO 11 CSC | Contacto: e.perez@colegiosancayetano.com.co | Teléfono: +573145255104</p>
     </footer>
