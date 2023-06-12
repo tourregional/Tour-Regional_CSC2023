@@ -13,7 +13,7 @@ var preguntasRespuestas = [
   },
   {
     pregunta: "costo",
-    respuesta: "El tour tiene un costo de $300.000 pesos por persona."
+    respuesta: "El tour tiene un costo de $pordefinir pesos por persona."
   },
   {
     pregunta: "incluye",
