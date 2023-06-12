@@ -230,6 +230,23 @@ h3{
   height: 40px;
   margin-top: 10px;
 }
+
+.image-container{
+  position: relative;
+}
+
+.nombre-imagen{
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 27px;
+}
     </style>
 </head>
 
@@ -295,33 +312,36 @@ h3{
         <center><h4>GRADO 11 CSC</h4></center>
         <div class="image-slider">
             <button id="anterior" class="button-slider">&lt;</button>
+            <div class="image-container">
             <img id="cambioimagen" class="img">
+            <div id="nombre-imagen" class="nombre-imagen"></div>
+            </div>
             <button id="siguiente" class="button-slider">&gt;</button>
         </div>
         <div class="gallery-container">
                 <img src="loguito.jpg" alt="portada" class="img">
-                <img src="benavides.jpg" alt="luis" class="img">
-                <img src="bermudez.jpg" alt="esteban" class="img">
-                <img src="cabezas.jpg" alt="isabel" class="img">
-                <img src="cano.jpg" alt="brandon" class="img" >
-                <img src="castaño.jpg" alt="laura" class="img">
-                <img src="criollo.jpg" alt="jose miguel" class="img">
-                <img src="davila.jpg" alt="geraldine" class="img">
-                <img src="enriquez.jpg" alt="eileen" class="img">
-                <img src="espinosa.jpg" alt="johan" class="img">
-                <img src="florez.jpg" alt="anghie" class="img">
-                <img src="lenis.jpg" alt="yury" class="img">
-                <img src="lopez.jpg" alt="juan sebastian" class="img">
-                <img src="maturana.jpg" alt="jhor" class="img">
-                <img src="ossa.jpg" alt="bryan" class="img">
-                <img src="parra.jpg" alt="sara" class="img">
-                <img src="perez.jpg" alt="estefany" class="img">
-                <img src="placeres.jpg" alt="nicolas" class="img">
-                <img src="rodriguez.jpg" alt="nasly" class="img">
-                <img src="ruiz.jpg" alt="valeria" class="img">
-                <img src="rosso.jpg" alt="juan jose" class="img">
-                <img src="sanchez.jpg" alt="breiner" class="img">
-                <img src="urbano.jpg" alt="hillary" class="img">
+                <img src="Luis Benavides.jpg" alt="luis" class="img">
+                <img src="Esteban Bermudez.jpg" alt="esteban" class="img">
+                <img src="Isabel Cuero.jpg" alt="isabel" class="img">
+                <img src="Brandon Cano.jpg" alt="brandon" class="img" >
+                <img src="Laura Castaño.jpg" alt="laura" class="img">
+                <img src="Jose Criollo.jpg" alt="jose miguel" class="img">
+                <img src="Geraldine Davila.jpg" alt="geraldine" class="img">
+                <img src="Nicol Enriquez.jpg" alt="eileen" class="img">
+                <img src="Johan Espinosa.jpg" alt="johan" class="img">
+                <img src="Anghie Florez.jpg" alt="anghie" class="img">
+                <img src="Yury Lenis.jpg" alt="yury" class="img">
+                <img src="Juan Lopez.jpg" alt="juan sebastian" class="img">
+                <img src="Jhor Maturana.jpg" alt="jhor" class="img">
+                <img src="Bryan Ossa.jpg" alt="bryan" class="img">
+                <img src="Sara Parra.jpg" alt="sara" class="img">
+                <img src="Estefany Perez.jpg" alt="estefany" class="img">
+                <img src="Nicolas Pláceres.jpg" alt="nicolas" class="img">
+                <img src="Nasly Rodriguez.jpg" alt="nasly" class="img">
+                <img src="Valeria Rodriguez.jpg" alt="valeria" class="img">
+                <img src="Juan Rosso.jpg" alt="juan jose" class="img">
+                <img src="Breiner Sanchez.jpg" alt="breiner" class="img">
+                <img src="Hillary Urbano.jpg" alt="hillary" class="img">
             </div>
     </main>
 
@@ -330,13 +350,14 @@ h3{
     </a>
 
     <script>
-        const images = [ "loguito.jpg", "benavides.jpg", "bermudez.jpg", "cabezas.jpg", "cano.jpg", "castaño.jpg", "criollo.jpg", "davila.jpg", "enriquez.jpg", "espinosa.jpg", "florez.jpg", "lenis.jpg", "lopez.jpg", "maturana.jpg", "ossa.jpg", "parra.jpg", "perez.jpg", "placeres.jpg", "rodriguez.jpg", "ruiz.jpg", "rosso.jpg", "sanchez.jpg", "urbano.jpg"];
+        const images = [ "loguito.jpg", "Luis Benavides.jpg", "Esteban Bermudez.jpg", "Isabel Cuero.jpg", "Brandon Cano.jpg", "Laura Castaño.jpg", "Jose Criollo.jpg", "Geraldine Davila.jpg", "Nicol Enriquez.jpg", "Johan Espinosa.jpg", "Anghie Florez.jpg", "Yury Lenis.jpg", "Juan Lopez.jpg", "Jhor Maturana.jpg", "Bryan Ossa.jpg", "Sara Parra.jpg", "Estefany Perez.jpg", "Nicolas Pláceres.jpg", "Nasly Rodriguez.jpg", "Valeria Rodriguez.jpg", "Juan Rosso.jpg", "Breiner Sanchez.jpg", "Hillary Urbano.jpg"];
 let currentImageIndex= 0;
 
 const cambioimagen = document.getElementById("cambioimagen");
 const anterior = document.getElementById("anterior");
 const siguiente = document.getElementById("siguiente");
 const arriba = document.getElementById("arriba");
+const nombreImagen = document.getElementById("nombre-imagen");
 const galleryContainer = document.querySelector(".gallery-container");
 const imageSlider = document.querySelector(".image-slider");
 
@@ -352,6 +373,7 @@ function anteriorImagen () {
 function siguienteImagen() {
   currentImageIndex = (currentImageIndex + 1) % images.length;
   cambioimagen.src = images[currentImageIndex];
+  actualizarNombreImagen();
 }
 
 function CambiarVista() {
@@ -364,6 +386,11 @@ function CambiarVista() {
     imageSlider.style.display = "flex";
     arriba.textContent = "Ver vista deslizador de imágenes";
   }
+}
+
+function actualizarNombreImagen(){
+  const nombre = images[currentImageIndex].split(".")[0];
+  nombreImagen.textContent = nombre;
 }
     </script>
     <br>
