@@ -39,7 +39,7 @@ function enviarMensaje() {
   var selectedQuestion = userInput.options[userInput.selectedIndex].text;
 
   var userMessage = document.createElement("p");
-  userMessage.innerText = "Usuario: " + selectedQuestion;
+  userMessage.innerText = "Turista: " + selectedQuestion;
   chatContainer.appendChild(userMessage);
 
   obtenerRespuesta(selectedOption);
