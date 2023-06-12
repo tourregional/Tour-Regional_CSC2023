@@ -205,6 +205,31 @@ h4{
 h3{
     color: red;
 }
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: green;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float img{
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
     </style>
 </head>
 
@@ -299,6 +324,10 @@ h3{
                 <img src="urbano.JPG" alt="hillary" class="img">
             </div>
     </main>
+
+    <a href="https://api.whatsapp.com/send?phone=3170950521" target="_blank" class="whatsapp-float">
+      <img src="whatsapp.png" alt="WhatsApp">
+    </a>
 
     <script>
         const images = [ "loguito.jpg", "benavides.jpg", "bermudez.jpg", "cabezas.jpg", "cano.jpg", "castaño.jpg", "criollo.jpg", "davila.jpg", "enriquez.jpg", "espinosa.jpg", "florez.jpg", "lenis.jpg", "lopez.jpg", "maturana.jpg", "ossa.jpg", "parra.jpg", "perez.jpg", "placeres.jpg", "rodriguez.jpg", "ruiz.jpg", "rosso.jpg", "sanchez.jpg", "urbano.jpg"];
