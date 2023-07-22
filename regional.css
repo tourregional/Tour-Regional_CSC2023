@@ -293,3 +293,13 @@ body {
     display: block;
   }
 }
+
+button{
+  height: 40px;
+   width: 80px;
+}
+
+#user-input{
+  height: 40px;
+   width: 200px;
+}

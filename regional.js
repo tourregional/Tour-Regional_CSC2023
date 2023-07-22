@@ -70,7 +70,7 @@ function mostrarRespuesta(respuesta) {
 
   var assistantMessage = document.createElement("p");
   assistantMessage.classList.add("message", "assistant-message");
-  assistantMessage.innerText = "Asistente: " + respuesta;
+  assistantMessage.innerText = "Asistente Virtual: " + respuesta;
   chatContainer.appendChild(assistantMessage);
 
   chatContainer.scrollTop = chatContainer.scrollHeight;
