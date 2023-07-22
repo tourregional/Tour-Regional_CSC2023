@@ -279,3 +279,17 @@ body {
   height: 40px;
   margin-top: 10px;
 }
+
+#aviso-escritorio{
+  display:none;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #aviso-escritorio{
+    display: block;
+  }
+}
