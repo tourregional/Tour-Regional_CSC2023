@@ -14,21 +14,9 @@ body {
     margin: 0;
     padding: 0;
   }
-  
- header {
-  background-color: darkblue;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
   header h1 {
     font-size: 32px;
     margin-bottom: 10px;
-  }
-  
-  nav {
-    background-color: gray;
   }
   
   nav ul {
