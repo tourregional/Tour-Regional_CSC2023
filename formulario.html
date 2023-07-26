@@ -7,79 +7,46 @@
 <title>Formulario CSC</title>
 </head>
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #555769;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: burlywood;
     }
 
-    .form-register{
-       background: linear-gradient(
-        50deg,
-        rgba(40,42,55,1) 50%
-        rgba(40,42,55,0.7)
-        url("https://drive.google.com/file/d/1LjNkWXfwX_JZE_p-hDI2t8epkdzYTTgk/view"));
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 50px;
-        width: 3000px;
-        height: max-content;
-        border-radius: 25px;
-    }
-    
-    .form-register h2{
-         color: #f4f6f9;
-         font-size: 40px;
-         margin-bottom: 25px;
+    main {
+            max-width: 950px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
     }
 
-    form{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+    h1 {
+      text-align: center;
     }
 
-    label{
-        font-size: 17px;
-        color: #959AAB;
-        margin-bottom: 10px;
+    p {
+      margin-bottom: 10px;
+      font-size: 21px;
+      text-align: justify;
     }
 
-    input , textarea{
-        padding: 17px 14px;
-        background-color: #333646;
-        border: 0;
-        font-size: 15px;
-        color: #F4F6F9;
-        margin-bottom: 20px;
-        border-radius: 10px;
-    }
+    header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
-    :focus {
-        outline: 1px solid #1E92E9;
-    }
-
-    .btn{
-        background-color: #1E92E9;
-        width: 150px;
-        align-self: flex-end;
-        cursor: pointer;
-    }
-
-    .btn:hover{
-        background-color: #2198F9;
-    }
-
-    nav {
+        nav {
     background-color: gray;
   }
   
@@ -88,7 +55,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-
+    justify-content: center;
   }
   
   nav ul li {
@@ -128,41 +95,25 @@
     text-decoration: underline;
   }
 </style>
-
+<header>
+  <h1>Tour por el Valle del Cauca</h1>
+</header>
 <nav>
     <ul>
       <li><a href="regional.html">Inicio</a></li>
+      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="acercatour.html">Acerca del tour</a></li>
+      <li><a href="director.html">Director Turistico</a></li>
+      <li><a href="formulario.html">Formulario</a></li>
+      <li><a href="asistente.html">Asistente Virtual</a></li>
       </ul>
 </nav>
 <body>
-    <form class="form-content" action="https://formsubmit.co/perezbrandonleon1208@gmail.com" method="POST">
-        <h2>Formulario de Contacto</h2>
-        <br>
-        
-        <label for="name">Nombre</label>
-        <input type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-        
-        <label for="email">Email</label>
-        <input type="text" name="Email" id="email" placeholder="Ingrese su Email">
-        
-        <label for="telefono">Telefono</label>
-        <input  type="text" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
-        
-        <label for="coments">Comentarios</label>
-        <textarea name="coments" id="coments" cols="30" rows="5" placeholder="asunto"></textarea>
-        
-        <input class="btn" type="submit" value="ENVIAR">
-
-        <input type="hidden" name="_subject" value="Persona Interesada por el tour">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_cc" value="Correo de la otra persona que le llega el formulario">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://tourregional.github.io/Tour-Regional_CSC2023/regional.html">
-
-    </form>
-
+  <main>
+  <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7CdjkcFfR2alGoruIF5nPfokRcOsecu87xYF8BW0jiPrsRg/viewform?embedded=true" width="640" height="1137" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe></center>
+</main>
     <footer>
-        <p>© 2023 GRADO 11 CSC | Contacto: g.davila@colegiosancayetano.com.co | Teléfono: +573225209718</p>
+        <em>© 2023 GRADO 11 CSC | Contacto: g.davila@colegiosancayetano.com.co | Teléfono: +573225209718</em>
         </footer>
 </body>
 </html>
